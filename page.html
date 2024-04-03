@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Projet GMAE</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="topnav">
+        <img src="image/bird.svg" width="158" height="110"></img>
+        <a href="#home">Adhérez!</a>
+        <a href="#news">Séjour 2 pour 1!</a>
+        <a href="#">Parrainez tous vos amis!</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+    <br>
+
+    <div class="containerfluid1">
+        <img src="image/slide-saison.jpg"></img>
+    </div>
+    <div class="containerfluid2">
+        <img src="image/image2.jpg"></img>
+    </div>
+
+    <form action="verif.php" method="post" class="form1">
+        <fieldset>
+            <label id="Voyage" name="Voyage">Voyage:</label>
+            <input type="text" name="Voyage">
+            
+            <br><br><br>
+            <label id="Catégorie" name="Catégorie">Catégorie:</label>
+            <select name="catégorie" id="catégorie">
+                <option value="Votre choix">Votre choix</option>
+                <option value="campagne">campagne</option>
+                <option value="rustique">rustique</option>
+                <option value="mer">mer</option>
+                <option value="montagne">montagne</option>
+            </select>
+            <br><br><br>
+            <label id="Formule" name="Formule">Formule:</label>
+            <br><br>
+            <select name="Formule" id="Formule">
+                <option value="Votre choix">Votre choix</option>
+                <option value="les nouveautés 2024">Les nouveautés 2024</option>
+                <option value="Coup de coeur 2 pour 1">Coup de coeur 2 pour 1</option>
+                <option value="Les séjours 2 pour 1">Les séjours 2 pour 1</option>
+                <option value="Les courts séjours à prix réduits">Les courts séjours à prix réduits</option>
+                <option value="Les Voyages Annuels">Les Voyages Annuels</option>
+                <option value="Le parrainage">Le parrainage</option>
+            </select>
+            <br><br><br>
+            <label id="Titre" name="Titre">Titre:</label>
+            <input id="Titre" name="Titre">
+            <br><br>
+            <label id="image-url" name="image-url">Image URL:</label>
+            <br><br>
+            <input type="text" name="image-url">
+            <br><br>
+            <input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
+            <input type="file" />
+            <br><br><br>
+            <label id="description" name="description">Description:</label>
+            <input id="description" name="description">
+            <br><br><br>
+            <label for="start">Date de début:</label>
+            <input type="date" id="start" name="trip-start" value="2024-07-22" min="2024-01-01" max="2025-12-31" />
+            <br><br>
+            <label for="end">Date de fin:</label>
+            <input type="date" id="end" name="trip-end" value="2024-07-22" min="2024-01-01" max="2026-12-31" />
+            <br><br>
+            <label id="prix" name="prix">Prix:</label>
+            <select name="prix" id="prix">
+                <option value="prix">Votre choix</option>
+                <option value="300€">300€</option>
+                <option value="500€">500€</option>
+                <option value="1200€">1200€</option>
+            </select>
+            <br><br>
+            <label id="destination" name="destination">Ajouter une destination</label>
+            <select id="ajouterdestination" name="ajouterdestination">
+                <option value="Lisbonne">Lisbonne</option>
+                <option value="Venise">Venise</option>
+                <option value="New York">New York</option>
+                <option value="Maroc">Maroc</option>
+            </select>
+            <br><br>
+            <label id="MaJdestination" name="MaJdestination">Mettre à jour une destination</label>
+            <br><br>
+            <select id="MaJdestination" name="MaJdestination">
+            <option value="Paris">Paris</option>
+            <option value="Barcelone">Barcelone</option>
+            <option value="Sidney">Sidney</option>
+
+            </select>
+            <br><br>
+            <label id="destination_a_supprimer" name="destination_a_supprimer">Supprimer une destination</label>
+            <br><br>
+            <input type="text" name="destination_a_supprimer">
+            <br><br>
+
+              <button type="submit">Envoyer</button>
+        </fieldset>
+    </form>
+      <div class="containerfluid3">
+        <fieldset>
+       <div id="Contact"></div>
+        <h5>Contact</h5>
+        <p>contact@bird.com</p>
+        <br><br>
+        <p>04 98 00 15 14</p>
+        <br><br>
+        <p>(Du lundi au vendredi de 10h à 14h)</p>
+        <br><br>
+        <p>35 rue de la destination
+           63100 Clermont-Ferrand</p>
+           </fieldset>
+
+
+      </div>
+</div>
+
+</body>
+</html>
